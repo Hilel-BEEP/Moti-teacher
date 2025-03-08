@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מוטי - מורה לשחמט</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>♟️ מוטי - מאמן שחמט מקצועי</h1>
+        <nav>
+            <button onclick="showTab('home')">🏠 בית</button>
+            <button onclick="showTab('gallery')">📸 גלריה</button>
+            <button onclick="showTab('contact')">📞 צור קשר</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- כרטיסיית בית -->
+        <section id="home" class="tab">
+            <h2>ברוכים הבאים!</h2>
+            <p>מוטי הוא מאמן שחמט מוסמך עם ניסיון של מעל 40 שנה.</p>
+            <p>🏆 הישגים בולטים:</p>
+            <ul>
+                <li> לימדתי מעל 1500 תלמידים. </li>
+                <li>  חלקם עברו 2200 במד כושר </li>
+            </ul>
+        </section>
+
+        <!-- כרטיסיית גלריה -->
+        <section id="gallery" class="tab hidden">
+            <h2>📸 גלריה</h2>
+            <div class="image-container">
+                <img src="/images/images/moti.jpg" alt="מוטי משחק שחמט">
+                <img src="/images/images/מוטי עם קספרוב.jpg" alt="מוטי מלמד תלמידים">
+                <img src="/images/images/מוטי מלמד.jpg" alt="מוטי בתחרות שחמט">
+            </div>
+        </section>
+
+        <!-- כרטיסיית צור קשר -->
+        <section id="contact" class="tab hidden">
+            <h2>📞 צור קשר</h2>
+            <p>רוצים ללמוד שחמט עם מוטי?</p>
+            <p>📞טלפון: 0504499100</p>
+            <p>✉️ אימייל: moti.chess@gmail.com</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
